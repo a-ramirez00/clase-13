@@ -1,0 +1,17 @@
+.section-uno{
+    color: pink;
+    padding: 1.25rem;
+    margin: .625rem;
+    background-color: lightcoral;
+    border-radius: .0781rem;
+}
+
+.section-dos{
+    // sirve par extender el codigo
+    @extend .section-uno;
+    background-color: black;
+    border-radius: none;
+}
+.section-tres{
+    @include grid(repeat(2,1fr), repeat(3,1fr), center, center, "area1 area1""area2 area2" "area3 area3");
+}

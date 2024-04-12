@@ -1,0 +1,16 @@
+
+.main-index{
+    background-color: lightblue;
+    section{
+        h2{
+            font-size: 1.75rem;
+            color:white;
+        }
+        &:nth-child(1){
+            background-color: black;
+          p{
+            color:green;
+          }
+        }
+    }
+}

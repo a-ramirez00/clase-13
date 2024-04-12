@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem; }
+  header h1 {
+    color: #b2a8a8;
+    padding-left: 1.25rem; }
+  header nav .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: none;
+    gap: 1.25rem;
+    list-style: none;
+    padding-right: 1.25rem; }
+    header nav .nav-bar li a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: beige; }
+      header nav .nav-bar li a:hover {
+        background-color: #b22424; }
+
+.main-index {
+  background-color: lightblue; }
+  .main-index section h2 {
+    font-size: 1.75rem;
+    color: white; }
+  .main-index section:nth-child(1) {
+    background-color: black; }
+    .main-index section:nth-child(1) p {
+      color: green; }
+
+.section-uno, .section-dos {
+  color: pink;
+  padding: 1.25rem;
+  margin: .625rem;
+  background-color: lightcoral;
+  border-radius: .0781rem; }
+
+.section-dos {
+  background-color: black;
+  border-radius: none; }
+
+.section-tres {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "area1 area1" "area2 area2" "area3 area3"; }
+
+@media (max-width: 786px) {
+  header {
+    flex-direction: column; } }

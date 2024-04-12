@@ -1,0 +1,30 @@
+// que es un mixins?
+
+// es un map con mas poder,sirve crear un bloque de coddigo que tienen cosas en comun 
+// @mixin flex{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// CONCEPTOS DE js
+// ------------------------------------
+// que es un parametro, van dentro del parentesis
+// son basicameente los elementos que nos permite acceder a la funcion
+
+@mixin flex($directon,$justify,$align,$gap){
+    display: flex;
+    flex-direction: $directon;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin grid($col,$row, $justify, $align,$area){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    justify-content: $justify;
+    align-content: $align;
+    grid-template-areas: $area;
+}

@@ -1,0 +1,28 @@
+header{
+    background-color: map-get($colores, fondoHeader);
+    // para llamar mixins se utiliza el @include
+    @include flex(row, space-between , center, 1.25rem);
+    h1{
+        color: rgb(178, 168, 168);
+        padding-left: 1.25rem;
+    }
+    nav{
+        .nav-bar{
+            @include flex(row, none, none, 1.25rem);
+            // display: flex;
+            // gap: 1.25rem;
+            list-style: none;
+            padding-right: 1.25rem;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    color:map-get($colores,fuenteprincipal);
+                    &:hover{
+                        background-color: rgb(178, 36, 36);
+                    }
+                }
+            }
+        }
+    }
+}

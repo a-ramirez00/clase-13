@@ -1,0 +1,46 @@
+
+// como ordenar o linkear los fragmentos de codigo
+
+// Primero se llama a las utilities pq son elementos que solo existen en sass, y css lee de arriba hacia abajo.
+// 1° variables
+// 2° mapa
+// 3° mixins
+// 4° funciones
+
+// ---------------------------------------------------------------------
+// FORMA DE LLAMAR
+
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+// Segundo archivos de base
+
+@import "./base/reset";
+
+@import "./base/generales";
+
+
+// tercero archivos de layout
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/main-contactos";
+
+@import "./layout/mediaQuerry/media768";
+
+// cuarto los componentes
+@import "./components/card";
+
+
+
+// cuando trabajamos con mediaquery debemos siempre ordenarlos en base a como van a a trabaar el proyecto
+//  desktopfirst => de desktop a mobile
+// mobilefirst => de mobile a desktop
+
+
+
+
+
+
+
+
+
